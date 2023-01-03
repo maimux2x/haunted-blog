@@ -1,4 +1,4 @@
-<%= render @blog %>
+<%= render partial: 'blog', locals: {blog: @blog}  %>
 
 <div>
   <% if @blog.owned_by?(current_user) %>
